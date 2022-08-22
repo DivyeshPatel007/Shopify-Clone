@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/shopify-favicon.png" type="image/x-icon">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primarybgc: '#fdf8ee',
+                        lightGreen: '#008060',
+                        greenText: '#004c3e',
+                        textColor: '#42474c',
+                        whitebgc: '#fcfcfc',
+                        extraLight: '#f3fcf4',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #004c3e;
+        }
+
+        .pri-btn:hover i {
+            position: relative;
+            left: 5px;
+        }
+
+        .back:hover i {
+            position: relative;
+            bottom: 5px;
+        }
+
+        .card-content:hover a {
+            border-bottom: 1px solid #fff;
+        }
+    </style>
+    <title>Best Ecommerce Platform In INDIA | Shopify</title>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <section id="navbar" class="  bg-primarybgc fixed top-0 w-[100vw] h-[10vh] z-10 ">
+
+        <div class="max-w-[110rem] mx-auto p-[1rem] flex items-center justify-between | lg:px-[3rem]">
+
+            <div class="left flex items-center gap-[40px]">
+                <!-- logo -->
+                <div class="logo">
+                    <img src="assets/shopify-logo.svg" class="w-[130px]" alt="">
+                </div>
+
+                <!-- Navigation -->
+                <div class="hidden | xl:block">
+                    <div class="flex gap-[3.5rem] text-xl text-textColor font-normal">
+                        <a href="" class="flex items-center gap-1">
+                            <p>Start</p> <img src="assets/carret-down.svg" class="w-[10px]" alt="">
+                        </a>
+                        <a href="" class="flex gap-1">
+                            <p>Sell</p> <img src="assets/carret-down.svg" class="w-[10px]" alt="">
+                        </a>
+                        <a href="" class="flex gap-1">
+                            <p>Market</p> <img src="assets/carret-down.svg" class="w-[10px]" alt="">
+                        </a>
+                        <a href="" class="flex gap-1">
+                            <p>Manage</p> <img src="assets/carret-down.svg" class="w-[10px]" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="right ">
+                <!-- logIN and Hamburger -->
+                <div class=" flex items-center gap-[20px] | xl:hidden">
+                    <a class="text-2xl text-textColor" href="">Log in</a>
+                    <div class="hamburger">
+                        <img src="assets/hamburger.png" alt="">
+                    </div>
+                </div>
+
+                <!-- second menu Text -->
+                <div class=" menu  items-center gap-[3.5rem]  hidden | xl:block xl:flex z-5">
+                    <div class="flex gap-10 text-xl text-textColor font-normal">
+                        <a href="">Pricing</a>
+                        <a href="" class="flex gap-1">
+                            <p>Learn</p> <img src="assets/carret-down.svg" class="w-[10px]" alt="">
+                        </a>
+                        <a href="">Log in</a>
+                    </div>
+
+                    <div class="btn bg-lightGreen rounded-xl px-[25px] py-[15px] ">
+                        <a href="" class="text-white ">Try for Free</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Hero Section -->
+
+    <section id="hero " class="bg-primarybgc overflow-hidden">
+        <div class=" h-[full] max-w-[110rem] mx-auto px-[1rem] w-[100%] | xl:h-[700px] xl:flex  xl:justify-between">
+            <!-- Hero-Content -->
+            <div class="content pt-[13rem] basis-[40%] xl:ml-[3rem]">
+                <h1 class="text-greenText text-4xl font-bold items-center xl:text-[50px] xl:font-estrabold ">The easiest
+                    way to sell <br> online in India</h1>
+                <p class="text-2xl font-light text-textColor my-[2rem]">Try one of the most powerful platforms on the
+                    market for free. No technical knowledge needed.</p>
+                <div class="sm:flex sm:items-center">
+                    <input
+                        class="w-[100%] h-[70px] border-solid border-[1px] border-black rounded-xl py-1 px-5 m-[0.5rem] | sm:w-3/5 "
+                        type="email" name="Email" placeholder="Enter Your email address" id="">
+                    <div
+                        class="btn w-[100%] h-[70px] m-[0.5rem] bg-lightGreen text-center rounded-xl px-[25px] py-[15px] sm:w-2/5  ">
+                        <a href="" class="text-white font-bold">Try for Free</a>
+                    </div>
+
+                </div>
+                <p class="mt-[20px] text-[15px] font-light"> Try Shopify free for 14 days, no credit card required. By
+                    entering your email, you agree to receive marketing emails from Shopify.</p>
+            </div>
+
+            <!-- Hero-Img -->
+            <div class="img" class="relative  basis-[60%] -z-1 flex items-center ">
+                <img src="assets/hero-imgs.jpg" class="w-[100%] xl:mt-[100px]  xl:relative xl:bottom:[200px] xl:left-[80px]" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Green Section -->
+
+    <section id="green" class="bg-greenText pb-[5rem]">
+
+        <div class="max-w-[110rem] mx-auto px-[1rem]">
+            <div class="upper pt-[7rem] text-white | 2xl:flex 2xl:justify-between">
+                <!-- content -->
+                <div class="content">
+                    <h2 class="text-3xl mb-[20px]">Bring your business online</h2>
+                    <p class="text-[20px] mb-[20px]">Create an ecommerce website backed by powerful tools that help you
+                        find customers, drive sales, and
+                        manage your day-to-day.</p>
+                </div>
+                <!-- Button -->
+                <div class="items-end | xl:mt-[3.5rem]">
+                    <a href="" class="pri-btn text-[20px] font-bold">
+                        Explore more examples
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="lower mt-[4rem]">
+                <div class="cards grid grid-cols-2 gap-5 | lg:grid-cols-3 | xl:grid-cols-4">
+                    <div class="card flex flex-col gap-5">
+                        <div class="img">
+                            <img src="assets/a1.jpg" class="lg:w-[300px]" alt="">
+                        </div>
+                        <div class="card-content text-white">
+                            <a href="" class="text-[20px]">FOOD & DRINK</a>
+                            <h4 class="text-[20px] font-light">Blue Tokai</h4>
+                        </div>
+                    </div>
+                    <div class="card flex flex-col gap-5">
+                        <div class="img">
+                            <img src="assets/a2.jpg" class="lg:w-[300px]" alt="">
+                        </div>
+                        <div class="card-content text-white">
+                            <a href="" class="text-[20px]">JEWELRY</a>
+                            <h4 class="text-[20px] font-light">Quirksmith</h4>
+                        </div>
+                    </div>
+                    <div class="card flex flex-col gap-5">
+                        <div class="img">
+                            <img src="assets/a3.jpg" class="lg:w-[300px]" alt="">
+                        </div>
+                        <div class="card-content text-white">
+                            <a href="" class="text-[20px]">ELECTRONICS</a>
+                            <h4 class="text-[20px] font-light">Crossbeats</h4>
+                        </div>
+                    </div>
+                    <div class="card flex flex-col gap-5">
+                        <div class="img">
+                            <img src="assets/a4.jpg" class="lg:w-[300px]" alt="">
+                        </div>
+                        <div class="card-content text-white">
+                            <a href="" class="text-[20px]">BEAUTY</a>
+                            <h4 class="text-[20px] font-light">Mcaffeine</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Best-Path -->
+    <section id="path" class="bg-greenText pb-[5rem]">
+        <div class="mx-auto max-w-[110rem] px-[1rem] | lg:px-[2rem]">
+            <div class="content text-white text-2xl pb-[2rem]">
+                <h3>Take the best path forward</h3>
+            </div>
+            <div class="card grid | lg:grid-cols-2 | xl:grid-cols-4">
+                <div class="cards pb-[2rem]">
+                    <div class="icon mb-[2rem]">
+                        <img class="w-[50px]" src="assets/drag-drop.svg" alt="">
+                    </div>
+                    <div class="content text-white">
+                        <h3 class="text-xl  mb-[1.5rem]">Start an online business</h3>
+                        <p class="lg">Create a business, whether you've got a fresh idea or are looking for a new way to
+                            make money.</p>
+                    </div>
+                </div>
+                <div class="cards pb-[2rem]">
+                    <div class="icon mb-[2rem]">
+                        <img class="w-[50px]" src="assets/shop.svg" alt="">
+                    </div>
+                    <div class="content text-white">
+                        <h3 class="text-xl  mb-[1.5rem]">Move your business online</h3>
+                        <p class="lg">Turn your retail store into an online store and keep serving customers without
+                            missing a beat.</p>
+                    </div>
+                </div>
+                <div class="cards pb-[2rem]">
+                    <div class="icon mb-[2rem]">
+                        <img class="w-[50px]" src="assets/indentory.svg" alt="">
+                    </div>
+                    <div class="content text-white">
+                        <h3 class="text-xl  mb-[1.5rem]">Switch to Shopify</h3>
+                        <p class="lg">Bring your business to Shopify, no matter which ecommerce platform you’re
+                            currently using.</p>
+                    </div>
+                </div>
+                <div class="cards pb-[2rem]">
+                    <div class="icon mb-[2rem]">
+                        <img class="w-[50px]" src="assets/group.svg" alt="">
+                    </div>
+                    <div class="content text-white">
+                        <h3 class="text-xl  mb-[1.5rem]">Hire a Shopify expert</h3>
+                        <p class="lg">Get set up with the help of a trusted freelancer or agency from the Shopify
+                            Experts Marketplace.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- features -->
+    <section id="features" class="bg-whitebgc mb-[5rem]">
+        <div class="mx-auto max-w-[110rem] px-[1rem] | lg:px-[2rem]">
+            <div class=" heading text-center py-[5rem]">
+                <h2 class="text-[28px] font-[400]">
+                    With you wherever you're going
+                </h2>
+                <p class="text-[20px] text-textColor">
+                    One platform with all the ecommerce and point of sale features you need to start, run, and grow your
+                    business.
+                </p>
+            </div>
+            <div class="feature-cards">
+                <div class="feature-card my-[5rem] | lg:flex lg:items-center lg:gap-[12rem]">
+                    <div class="content">
+                        <h2 class="text-2xl mb-[1rem] | lg:text-4xl">
+                            Sell everywhere
+                        </h2>
+                        <p class="text-lg text-textColor mb-[1rem] | lg:text-xl">
+                            Use one platform to sell products to anyone, anywhere—in person with Point of Sale and
+                            online
+                            through your website, social media, and online marketplaces.
+                        </p>
+                        <div class="items-end | xl:mt-[3.5rem]">
+                            <a href="" class="pri-btn text-lightGreen text-[20px] font-bold | lg:text-[25px]">
+                                Explore more examples
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img lg:-order-1">
+                        <img src="assets/sell-everywhere.png"></img>
+                    </div>
+                </div>
+                <div class="feature-card my-[5rem] | lg:flex lg:items-center lg:gap-[13rem]">
+                    <div class="content">
+                        <h2 class="text-2xl mb-[1rem] | lg:text-4xl">
+                            Market your business
+                        </h2>
+                        <p class="text-lg text-textColor mb-[1rem] | lg:text-xl">
+                            Take the guesswork out of marketing with built-in tools that help you create, execute, and
+                            analyze digital marketing campaigns.
+                        </p>
+                        <div class="items-end | xl:mt-[3.5rem]">
+                            <a href="" class="pri-btn text-lightGreen text-[20px] font-bold | lg:text-[25px]">
+                                Explore how to market your business
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="assets/market-your-business.webp"></img>
+                    </div>
+                </div>
+                <div class="feature-card my-[5rem] | lg:flex lg:items-center lg:gap-[15rem]">
+                    <div class="content">
+                        <h2 class="text-2xl mb-[1rem] | lg:text-4xl">
+                            Manage everything
+                        </h2>
+                        <p class="text-lg text-textColor mb-[1rem] | lg:text-xl">
+                            Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and
+                            payments anywhere you go.
+                        </p>
+                        <div class="items-end | xl:mt-[3.5rem]">
+                            <a href="" class="pri-btn text-lightGreen text-[20px] font-bold | lg:text-[25px]">
+                                Explore how to manage your business
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img | lg:-order-1">
+                        <img class="w-[800px]" src="assets/Manage-everything.png"></img>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- Explore     -->
+
+    <section id="explore" class="bg-extraLight py-[5rem]">
+        <div class="mx-auto max-w-[110rem] px-[1rem] | lg:px-[2rem]">
+            <div class="heading mb-[2.5rem]">
+                <h2 class="text-2xl text-lightGreen text-center font-[500] | lg:text-3xl lg:text-start | xl:text-4xl">
+                    Explore more from Shopify in India
+                </h2>
+            </div>
+
+            <div class="person-card bg-white | lg:flex">
+                <div class="img">
+                    <img class="w-full h-full" src="assets/person.jpg" alt="">
+                </div>
+                <div class="content -order-1 | lg:w-[60%]">
+                    <div class=" p-[2rem] content">
+                        <h2 class="text-md font-bold my-[1rem] | lg:text-lg | xl:text-xl">
+                            START
+                        </h2>
+                        <h2 class="text-2xl font-light mb-[1rem] | lg:text-2xl | xl:text-4xl">
+                            Launch your store with the help of a Shopify Expert
+                        </h2>
+                        <p class="text-lg text-textColor mb-[1rem] | lg:text-lg | xl:text-xl">
+                            Find hundreds of experts from India ready to help you get your store up and running, from
+                            choosing a theme to building a fully customized site.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- globe   -->
+
+    <section id="globe" class="bg-whitebgc">
+        <div class="mx-auto max-w-[110rem] px-[1rem] | lg:px-[2rem]">
+            <div class="content">
+
+                <h2 class="text-2xl font-normal mb-[1rem] | lg:text-2xl | xl:text-4xl">
+                    Empowering independent business owners everywhere
+                </h2>
+                <p class="text-2xl font-light mb-[1rem] lg:w-[700px]">
+
+                    Millions of businesses in <span class="font-bold"> 175 countries </span>around the world have made
+                    over <span class="font-bold">$496 billion
+                        USD</span> in sales using Shopify.
+                </p>
+                <div class="items-end | xl:mt-[3.5rem]">
+                    <a href="" class="pri-btn text-lightGreen text-[20px] font-normal | lg:text-[25px]">
+                        Browse Experts in India
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="globe-img">
+                <img src="assets/globe.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Alicia -->
+    <section id="alicia">
+        <div class="mx-auto max-w-[110rem] px-[1rem] | lg:px-[2rem]">
+            <!-- person-Card -->
+            <div class="person-card bg-greenText | lg:flex">
+                <div class="img">
+                    <img class="w-full h-full" src="assets/alicia.jpg" alt="">
+                </div>
+                <!-- content -->
+                <div class="content flex flex-col items-center justify-center gap-2 py-[2rem]   | lg:w-[60%]">
+                    <div class=" content p-[3rem] flex items-center justify-center h-full">
+                        <h2
+                            class=" text-center text-white text-2xl font-light mb-[1rem] | lg:text-2xl | xl:text-4xl xl:font-normal xl:w-[500px]">
+                            “Shopify was my knight in shining armor when I exhausted every other possibility of getting
+                            my online store up and running. It was stunningly easy to use, with more features and
+                            plug-ins that I didn't even know I wanted.”
+                        </h2>
+
+                    </div>
+                    <!-- logo -->
+                    <div class="logo pb-[2rem]">
+                        <img src="assets/logo-alicia-souza.png" alt="">
+                    </div>
+                    <div class="name pb-[1rem]">
+                        <h3 class="text-white font-semibold | lg:xl">
+                            Alicia | Alicia Souza
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- brand   -->
+
+
+    <section id="brand">
+        <div class="mx-auto max-w-[110rem] px-[1rem] | lg:px-[2rem]">
+            <!-- brand-partner-cards -->
+            <div class="card flex items-center justify-center h-[400px] | lg:h-[200px] flex-wrap gap-x-[5rem] py-[2rem]">
+                <img class="w-[110px]" src="assets/bajaao.png" alt="">
+                <img class="w-[110px]" src="assets/john-jacobs.png" alt="">
+                <img class="w-[110px]" src="assets/kylie.png" alt="">
+                <img class="w-[110px]" src="assets/nush.png" alt="">
+                <img class="w-[110px]" src="assets/yoga-bar.png" alt="">
+                <img class="w-[110px]" src="assets/star-struck.png" alt="">
+                <img class="w-[110px]" src="assets/caff.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- support -->
+    <section id="support" class="bg-primarybgc lg:flex">
+        <div class="mx-auto max-w-[110rem]">
+            <h2 class="p-[3rem] text-3xl font-normal mb-[1rem] | lg:text-2xl | xl:text-4xl">
+                Get the help you need, every step of the way
+            </h2>
+            <div class="content px-[2rem]">
+                <div class="support-cards flex flex-col gap-[2rem] lg:flex-row lg:flex-wrap">
+
+                    <div class="card ">
+                        <h2 class="text-xl mb-[1rem] font-[400] ">
+                            Shopify App Store
+                        </h2>
+
+                        <p class="text-lg text-textColor mb-[1rem] w-[300px]">
+                            Add features and functionality to your business with 6,000+ apps that integrate directly
+                            with Shopify.
+                        </p>
+                        <div class="items-end | xl:mt-[2rem]">
+                            <a href="" class="pri-btn text-lightGreen text-[20px] font-bold">
+                                Visit the Shopify App Store
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <h2 class="text-xl mb-[1rem] font-[400]">
+                            Shopify Experts Marketplace
+                        </h2>
+
+                        <p class="text-lg text-textColor mb-[1rem] w-[300px]">
+                            Hire a Shopify expert to help you with everything from store setup to SEO.
+                        </p>
+                        <div class="items-end | xl:mt-[2rem]">
+                            <a href="" class="pri-btn text-lightGreen text-[20px] font-bold">
+                                Explore the Shopify Experts Marketplace
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <h2 class="text-xl mb-[1rem] font-[400] ">
+                            Shopify support
+                        </h2>
+
+                        <p class="text-lg text-textColor mb-[1rem] w-[300px]">
+                            Contact support 24/7, whether you're troubleshooting issues or looking for business advice.
+                        </p>
+                        <div class="items-end | xl:mt-[2rem]">
+                            <a href="" class="pri-btn text-lightGreen text-[20px] font-bold ">
+                                Contact support
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="img">
+            <img class="h-full" src="assets/support.jpg" alt="">
+        </div>
+        </div>
+    </section>
+
+    <!-- start Journey -->
+    <section id="journey" class="bg-whitebgc pb-[5rem]">
+        <div
+            class=" flex flex-col items-center justify center mx-auto max-w-[110rem] px-[1rem] text-center | lg:px-[2rem]">
+            <h2 class="text-2xl font-normal mt-[5rem] mb-[1rem] | lg:text-2xl | xl:text-4xl">
+                Start your business journey with Shopify
+            </h2>
+            <p class="text-lg text-textColor mb-[1rem]">
+                Try Shopify for free, and explore all the tools and services you need to start, run, and grow your
+                business.
+            </p>
+            <div class="btn bg-lightGreen rounded-xl px-[25px] py-[15px]  ">
+                <a href="" class="text-white ">Start free trial</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="back bg-whitebgc py-[2rem] mx-auto max-w-[110rem] px-[1rem] text-end | lg:px-[2rem]">
+        <h3 class="text-lightGreen text-2xl">
+            Back to Top
+            <i class="fa-solid fa-arrow-up"></i>
+        </h3>
+    </div>
+
+    <!-- footer -->
+
+
+
+    <section id="footer" class="bg-[#002E25] py-[2rem]">
+        <div class="mx-auto max-w-[110rem] px-[2rem] | lg:px-[2rem]">
+
+            <div
+                class="upper-footer text-white py-[1rem] border-solid border-b-[1px] border-[#d2d5d91a]  flex items-center justify-center gap-x-2 flex-wrap | lg:justify-start">
+                <h2 class="font-bold text-lg mr-[20px]">About</h2>
+                <h2 class="font-bold text-lg mr-[20px]">Career</h2>
+                <h2 class="font-bold text-lg mr-[20px]">Press and Media</h2>
+                <h2 class="font-bold text-lg mr-[20px]">Shopify Plus</h2>
+                <h2 class="font-bold text-lg mr-[20px]">Sitemap</h2>
+            </div>
+
+            <div class="middle-footer text-white flex gap-[2rem] flex-wrap mb-[20px]">
+
+                <div class="online-store mt-[2rem]">
+                    <h3 class="font-bold">
+                        ONLINE STORE
+                    </h3>
+                    <div class="items text-[#b6babf] mt-[1rem] flex flex-wrap flex-col lg:w-[800px] lg:h-[120px]">
+                        <p>Sell Online</p>
+                        <p>Feature</p>
+                        <p>Examples</p>
+                        <p>Website Builder</p>
+                        <p>Online Retail</p>
+                        <p>Ecommerce Website</p>
+                        <p>Domain names</p>
+                        <p>Themes</p>
+                        <p>Shopping cart</p>
+                        <p>Ecommerce Hosting</p>
+                        <p>Mobile Commerce</p>
+                        <p>Ecommerce software</p>
+                        <p>Online store Builder</p>
+                        <p>Dropshipping Business</p>
+                        <p>Store themes</p>
+                    </div>
+                </div>
+
+
+
+                <div class="sale mt-[2rem]">
+                    <h3 class="font-bold">
+                        POINT OF SALE
+
+                    </h3>
+                    <div class="items text-[#b6babf] mt-[1rem] flex flex-col ">
+                        <p>Point of sale</p>
+                        <p>Feature</p>
+
+                    </div>
+                </div>
+
+                <div class="support mt-[2rem]">
+                    <h3 class="font-bold">
+                        SUPPORT
+                    </h3>
+                    <div class="items text-[#b6babf] mt-[1rem] flex flex-col">
+                        <p>24/7 support</p>
+                        <p>Shopify Help Center</p>
+                        <p>Shopify Community</p>
+                        <p>API documentation</p>
+                        <p>Free tools</p>
+                        <p>Free stock photos</p>
+                        <p>Websites for sale</p>
+                        <p>Logo Maker</p>
+                        <p>Business name generator</p>
+                        <p>Research</p>
+                        <p>Legal</p>
+                    </div>
+                </div>
+
+
+
+                <div class="contact mt-[2rem]">
+                    <h3 class="font-bold">
+                        SHOPIFY
+                    </h3>
+                    <div class="items text-[#b6babf] mt-[1rem] flex flex-col ">
+                        <p>Contact</p>
+                        <p>Partner program</p>
+                        <p>Affiliate program</p>
+                        <p>App developers</p>
+                        <p>Investors</p>
+                        <p>Blog topics</p>
+                        <p>Community Events</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <!-- border -->
+        <div class="border-[1px] border-solid border-[#d2d5d91a]"></div>
+
+
+        <!-- lower-footer -->
+        <div class="mx-auto max-w-[110rem] px-[2rem] | lg:px-[2rem]">
+            <div class="lower-footer mt-[2rem] flex gap-5 flex-col items-center justify-between | lg:flex-row">
+                <div class="social flex gap-10  items-center">
+                    <i class="bg-white  w-8 h-8 rounded-full p-2 fa-brands fa-facebook-f"></i>
+                    <i class="bg-white  w-8 h-8 rounded-full p-2 fa-brands fa-twitter"></i>
+                    <i class="bg-white  w-8 h-8 rounded-full p-2 fa-brands fa-youtube"></i>
+                    <i class="bg-white  w-8 h-8 rounded-full p-2 fa-brands fa-instagram"></i>
+                    <i class="bg-white  w-8 h-8 rounded-full p-2 fa-brands fa-linkedin"></i>
+                    <i class="bg-white  w-8 h-8 rounded-full p-2 fa-brands fa-pinterest"></i>
+                </div>
+                <div class="policy text-white ">
+                    <a class="text-[#b6babf] mr-[15px] text-xl" href="">Terms of Service</a>
+                    <a class="text-[#b6babf] mr-[15px] text-xl" href="">Privacy Policy</a>
+                    <a class="text-white mr-[15px] text-xl" href="">
+                        <i class="fa-solid fa-globe"></i>
+                        India
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
